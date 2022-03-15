@@ -6,13 +6,14 @@ const Player = ({ rotate, nextValue, winsX, winsO, ties, active }) => {
             {active && <div className={`${rotate ? 'rotate-active-background' : 'active-background'}`}></div>}
             <div className={`player ${rotate && 'rotate'}`}>
                 <div className="players-info">
-                    <div className="status">{active ? 'Your' : `${nextValue}'s`} turn!</div>
                     <div className="score">
-                        <h1>Score:</h1>
-                        <p>Wins <b>{active && nextValue !== 'O' ? 'You' : 'X'}</b>: {winsX}</p>
-                        <p>Wins <b>{active  && nextValue !== 'X' ? 'You' : 'O'}</b>: {winsO}</p>
-                        <p>Draws: {ties}</p>
+                        <div className="score-numbers">
+                            <div><p><b>X</b><br /> {winsX}</p></div>
+                            <div><p><b>O</b><br /> {winsO}</p></div>
+                            <div><p><b>Draws</b><br /> {ties}</p></div>
+                        </div>
                     </div>
+                    <div className="status">{active ? 'Your' : `${nextValue}'s`} turn!</div> 
                 </div>
             </div>
         </>
