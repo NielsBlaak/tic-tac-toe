@@ -1,25 +1,15 @@
-*{
+* {
 	font-family: 'Hubballi', sans-serif;
 	@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 }
 
 html {
 	background-color: #6DB1BF;
-	
 }
 
 html, body, #root, .game, .game-board {
 	height: 100%;
 	overflow: hidden;
-}
-
-.game {
-	text-align: center;	
-}
-
-.game ol,
-.game ul {
-	padding-left: 30px;
 }
 
 .board-row:after {
@@ -34,7 +24,6 @@ html, body, #root, .game, .game-board {
     justify-content: center;
     flex-direction: column;
 	align-items: center;
-	z-index: 10;
 }
 
 .status {
@@ -42,6 +31,7 @@ html, body, #root, .game, .game-board {
 	font-weight: bold;
 	font-size: 28px;
 	color: #FFFBFF;
+	text-align: center;
 }
 
 .restart {
@@ -51,7 +41,7 @@ html, body, #root, .game, .game-board {
 	color: #FFFBFF;
 	font-size: 24px;
 	padding: 10px 25px;
-	border-radius: 12px;
+	border-radius: 8px;
 	font-weight: bold;
 }
 
@@ -74,17 +64,6 @@ html, body, #root, .game, .game-board {
 	background: #bbb;
 }
 
-.game {
-	margin-right: auto;
-	margin-left: auto;
-	flex-direction: row;
-}
-
-.game-info {
-	margin-left: 20px;
-	min-width: 190px;
-}
-
 .score-numbers div {
 	font-size: 20px;
 	width: 75px;
@@ -103,6 +82,7 @@ html, body, #root, .game, .game-board {
 .score-numbers {
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .modal {
@@ -117,6 +97,7 @@ html, body, #root, .game, .game-board {
     transform: translate(-50%, -50%);
 	z-index: 10000;
 	width: 100%;
+	text-align: center;
 }
 
 .winner {
@@ -144,14 +125,6 @@ html, body, #root, .game, .game-board {
 .player {
 	height: 25%;
 	position: relative;
-}
-
-.players-info {
-
-}
-
-h1 {
-	margin: 10px auto;
 }
 
 @keyframes slidein {
