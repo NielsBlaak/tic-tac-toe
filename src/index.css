@@ -7,7 +7,83 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home h1 {
+  text-align: center;
+  font-size: 54px;
+  padding: 20px 0px;
+  text-shadow: 2px 2px #F2FF49;
+}
+
+.home {
+	background-image: linear-gradient(#6DB1BF, #F2FF49);
+	animation: 1s ease-out 0s 1 slidein;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+.title {
+  position: relative;
+  height: 45%;
+  width: 100%;
+}
+
+h1 {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.example {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.button {
+  text-align: center;
+}
+
+.button a {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+.button a::after {
+  content: "";
+  background-color: #6DB1BF;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button a:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.button a:visited {
+  color: black;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    top: 10px;
+  }
 }

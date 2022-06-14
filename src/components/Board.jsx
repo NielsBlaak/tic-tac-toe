@@ -29,10 +29,6 @@ const Board = () => {
         return null
     }
 
-    function calculatePreviousValue(squares) {
-		return squares.filter(Boolean).length % 2 !== 0 ? 'X' : 'O';
-    }
-
   	function calculateNextValue(squares) {
         return squares.filter(Boolean).length % 2 === 0 ? 'X' : 'O';
     }
@@ -75,6 +71,7 @@ const Board = () => {
             setTies(ties + 1);
             setOpen(true);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [winner, squares])
 
     return (

@@ -1143,13 +1143,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@capacitor-community/admob@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@capacitor-community/admob/-/admob-3.2.0.tgz#49533f8340b144faf5f4a04dbe933190d67792c5"
-  integrity sha512-g5mUCl4UyTVOoxqzLBdAy3BHou2Sm8GJBU3rgI9x5nESdVfcpeBgveBHOjCA9O8ATTeSFWSZIlXbNTTzlwI3YA==
-  dependencies:
-    "@capacitor/core" "^3.0.0"
-
 "@capacitor/android@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-3.3.1.tgz#3aa175d59d849dfe6d210dd9a2f6f2b7ab9c649f"

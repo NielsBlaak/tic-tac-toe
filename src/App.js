@@ -1,14 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Board from './components/Board';
+import Start from './pages/Start';
+import Game from './pages/Game';
 
-function App() {
-  return (
-		<div className="game">
-			<div className="game-board">
-				<Board />
-			</div>
-		</div>
-	);
+const App = () => {
+	return (
+		<Router>
+			<Routes>
+				<Route path="/" element={<Start />} />
+				<Route path="/game" element={<Game />} />
+			</Routes>
+		</Router>
+	)
 }
 
 export default App;

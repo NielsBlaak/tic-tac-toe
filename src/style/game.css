@@ -1,0 +1,166 @@
+* {
+	font-family: 'Hubballi', sans-serif;
+	@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+}
+
+html {
+	background-color: #6DB1BF;
+}
+
+html, body, #root, .game, .game-board {
+	height: 100%;
+	overflow: hidden;
+}
+
+.board-row:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.board {
+	display: flex;
+	height: 50%;
+    justify-content: center;
+    flex-direction: column;
+	align-items: center;
+}
+
+.status {
+	margin: 30px 0;
+	font-weight: bold;
+	font-size: 28px;
+	color: #FFFBFF;
+	text-align: center;
+}
+
+.restart {
+	margin: 30px 0;
+	background-color: #6DB1BF;
+	border: 0;
+	color: #FFFBFF;
+	font-size: 24px;
+	padding: 10px 25px;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+.square {
+	background: #FFEAEC;
+	border: 1px solid transparent;
+    float: left;
+    font-size: 70px;
+    line-height: 34px;
+    height: 100px;
+    width: 100px;
+    margin-right: 2px;
+    margin-top: 2px;
+    padding: 0;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.square:focus {
+	outline: none;
+	background: #bbb;
+}
+
+.score-numbers div {
+	font-size: 20px;
+	width: 75px;
+	height: 75px;
+	margin: 5px;
+	background-color: #FFEAEC;
+	border-radius: 4px;
+	color: black;
+	display: flex;
+}
+
+.score-numbers p {
+	margin: auto;
+}
+
+.score-numbers {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.modal {
+	background-color: #FFFBFF;
+	border-radius: 4px;
+	color: #63ACBB;
+	font-weight: bold;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	z-index: 10000;
+	width: 100%;
+	text-align: center;
+}
+
+.winner {
+	font-size: 36px;
+}
+
+#backdrop {
+	position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.rotate {
+	transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+}
+
+.player {
+	height: 25%;
+	position: relative;
+}
+
+@keyframes slidein {
+	0% {
+	  transform: translateY(100%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+}
+
+@keyframes rotateslidein {
+	0% {
+	  transform: translateY(-100%);
+	}
+	100% {
+	  transform: translateY(-50%);
+	}
+}
+
+.rotate-active-background {
+	background-image: linear-gradient(0deg,#6DB1BF, #F2FF49);
+	animation: 1s ease-out 0s 1 rotateslidein;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+	transform: translateY(-50%);
+}
+
+.active-background {
+	background-image: linear-gradient(#6DB1BF, #F2FF49);
+	animation: 1s ease-out 0s 1 slidein;
+	position: absolute;
+	height: 25%;
+	width: 100%;
+	z-index: 0;
+}
