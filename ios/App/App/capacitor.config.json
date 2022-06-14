@@ -1,0 +1,15 @@
+{
+	"appId": "com.tictactoe.app",
+	"appName": "Tic Tac Toe",
+	"webDir": "build",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"SplashScreen": {
+			"launchAutoHide": false,
+			"androidScaleType": "CENTER_CROP",
+			"splashFullScreen": true,
+			"splashImmersive": false,
+			"backgroundColor": "#ffffff"
+		}
+	}
+}

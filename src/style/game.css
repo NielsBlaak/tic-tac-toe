@@ -7,7 +7,11 @@ html {
 	background-color: #6DB1BF;
 }
 
-html, body, #root, .game, .game-board {
+#root {
+	height: 95%;
+}
+
+html, body, .game, .game-board {
 	height: 100%;
 	overflow: hidden;
 }
@@ -153,14 +157,14 @@ html, body, #root, .game, .game-board {
 	height: 100%;
 	width: 100%;
 	z-index: -10;
-	transform: translateY(-50%);
+	transform: translateY(-30%);
 }
 
 .active-background {
 	background-image: linear-gradient(#6DB1BF, #F2FF49);
 	animation: 1s ease-out 0s 1 slidein;
 	position: absolute;
-	height: 25%;
+	height: 30%;
 	width: 100%;
 	z-index: 0;
 }

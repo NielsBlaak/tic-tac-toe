@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Modal from './Modal';
 import Player from './Player';
+import { rewardVideo } from '../admob';
 
 const Board = () => {
     const [squares, setSquares] = useState(Array(9).fill(null));
@@ -48,6 +49,7 @@ const Board = () => {
     function restart() {
         setSquares(Array(9).fill(null));
         setOpen(false);
+        rewardVideo();
     }
   
     function renderSquare(i) {
