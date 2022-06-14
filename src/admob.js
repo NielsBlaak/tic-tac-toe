@@ -40,7 +40,7 @@ export async function banner() {
       adSize: BannerAdSize.ADAPTIVE_BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
-      isTesting: true
+      // isTesting: true
       // npa: true
     };
     AdMob.showBanner(options);
@@ -60,7 +60,7 @@ export async function rewardVideo() {
   
     const options = {
       adId,
-      isTesting: true
+      // isTesting: true
       // npa: true
       // ssv: {
       //   userId: "A user ID to send to your SSV"
